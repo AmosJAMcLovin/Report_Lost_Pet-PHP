@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Pet Got Lost - Report a Lost Pet</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body style="background-color: rgb(255,255,204)";
+<style text="DarkRed";>
+
+<h2>My Pet Got Lost - Report a Lost Pet</h2>
+
+<p>Share your story of a lost pet:</p>
+
+	<form method="post" action="report.php">
+		
+		<label for="firstName">First name:</label>
+		<input type="text" id="firstName" name="firstName" required/><br />
+		
+		<label for="lastName">Last name:</label>
+		<input type="text" id="lastName" name="lastName" required/><br />
+		
+		<label for="email">What is your email address?</label>
+		<input type="email" id="email" name="email" required/><br />
+		
+		<label for="when">When did you last see your pet?</label>
+		<input type="text" id="when" name="when" /><br />
+		
+		<label for="howLong">How long has your pet been gone?</label>
+		<input type="text" id="howLong" name="howLong" /><br />
+		
+		<label for="idTag">Does your pet have an ID tag?</label>
+		<input type="text" id="idTag" name="idTag" /><br />
+		
+		<label for="petDescription">Describe your pet:</label>
+		<input type="text" id="petDescription" name="petDescription" size=32 /><br />
+		
+		<label for="idTag">What is your pet's name?</label>
+		<input type="text" id="petName" name="petName" size="32" /><br />
+		
+		<label>Have you seen my dog Max?</label>
+		<label for="yes" class="radioLabels">Yes</label> <input id="yes"
+			name="maxSeen" type="radio" value="yes" required/>
+		<label for="no" class="radioLabels">No</label> <input id="no"
+			name="maxSeen" type="radio" value="no" required/>
+		
+		<img src="2C_initial_files/dog.jpg" width="133" height="200" alt="My lost dog Max." /><br />
+		
+		<label for="otherInfo">Any other comments or information?</label>
+		<textarea id="otherInfo" name="otherInfo"></textarea><br />
+		
+		<input type="submit" value="Report Lost Pet" name="submit" />
+	 </form>
+	 </style>
+</body>
+</html>
